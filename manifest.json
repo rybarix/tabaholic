@@ -1,0 +1,17 @@
+{
+  "name": "Tabaholic",
+  "description": "Chrome extension that tracks your recently used tabs. Useful for managing 20+ tabs open at once.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "extension-logo.png"
+  },
+  "icons": {
+    "128": "extension-logo.png"
+  },
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
