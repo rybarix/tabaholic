@@ -9,9 +9,22 @@
   "icons": {
     "128": "extension-logo.png"
   },
-  "permissions": ["tabs", "scripting"],
+  "permissions": ["tabs", "scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "favicons/hot_1.png",
+        "favicons/hot_2.png",
+        "favicons/hot_3.png",
+        "favicons/hot_4.png",
+        "favicons/hot_5.png",
+        "favicons/hot_6.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
